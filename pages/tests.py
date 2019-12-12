@@ -1,7 +1,7 @@
 from django.test import TestCase, SimpleTestCase
 from django.urls import reverse, resolve
 
-from .views import HomePageView
+from .views import HomePageView, AboutPageView
 
 
 
