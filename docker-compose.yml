@@ -4,6 +4,9 @@ services:
   web:
     build: .
     command: python /code/manage.py runserver 0.0.0.0:8000
+    environment:
+      - SECRET_KEY=trnu(=iah2xlr#*lwwsp!tvyzjq!watrj=hi=kdmcmf8$$@_r$$m
+      - DEBUG=1
     volumes:
       - .:/code
     ports:
