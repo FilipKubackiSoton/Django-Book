@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'django.contrib.sites', #new
 
+
     #third-party
     'crispy_forms',
     'allauth', #new
@@ -50,6 +51,7 @@ INSTALLED_APPS = [
     'users.apps.UsersConfig',
     'pages.apps.PagesConfig', #new
     'books.apps.BooksConfig', #new
+    'orders.apps.OrdersConfig', #new
 ]
 
 #django-crispy-forms
@@ -175,3 +177,10 @@ ACCOUNT_USERNAME_REQUIRED = False #new
 ACCOUNT_AUTHENTICATION_METHOD = 'email' #new
 ACCOUNT_EMAIL_REQUIRED = True #new
 ACCOUNT_UNIQUE_EMAIL = True #new
+
+#Stripe - as it is done is a bad habbit, I did it because other way did not work
+# and I could have not resolve it.
+#STRIPE_TEST_PUBLISHABLE_KEY=os.environ.get('STRIPE_TEST_PUBLISHABLE_KEY')
+STRIPE_TEST_PUBLISHABLE_KEY='pk_test_fL3wQD3HoRrJFN0maGhusMxr00ERcbUs8e'
+#STRIPE_TEST_SECRET_KEY=os.environ.get('STRIPE_TEST_SECRET_KEY')
+STRIPE_TEST_SECRET_KEY='sk_test_0fRgNX1Ernba4sDmQMiKXp2M00CKjf8Ja7'

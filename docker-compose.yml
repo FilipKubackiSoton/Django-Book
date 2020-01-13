@@ -7,6 +7,9 @@ services:
     environment:
       - SECRET_KEY=trnu(=iah2xlr#*lwwsp!tvyzjq!watrj=hi=kdmcmf8$$@_r$$m
       - DEBUG=1
+      - STRIPE_TEST_PUBLISHABLE_KEY=<pk_test_your_publishable_key_here>
+      - STRIPE_TEST_SECRET_KEY=<sk_test_your_secret_key_here>
+
     volumes:
       - .:/code
     ports:
